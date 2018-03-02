@@ -185,30 +185,13 @@ empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/tidrivers_tivac_2_16_00_08/pac
 empty.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdbool.h
 empty.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stddef.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/timers/timer64/Timer.h
+empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/timers/timer64/package/package.defs.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
+empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/package/package.defs.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
 empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/ITimer.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/Hwi.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/Hwi__prologue.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/package/package.defs.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/IHwi.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/IHwi.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/Hwi__epilogue.h
 empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
@@ -220,23 +203,11 @@ empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
 empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.h
 empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/IHwi.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/ITimerSupport.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/timers/timer64/package/Timer_TimerSupportProxy.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/ITimerSupport.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/timers/timer64/package/Timer_TimerSupportProxy.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/package/package.defs.h
-empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/ITimer.h
-empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi.h
+empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h
+empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/cfg/global.h
 empty.obj: C:/Users/Andres/workspace_v7/empty_EK_TM4C123GXL_TI/Debug/configPkg/package/cfg/empty_pem4f.h
 empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h
@@ -245,6 +216,7 @@ empty.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sy
 empty.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h
 empty.obj: ../Board.h
 empty.obj: ../EK_TM4C123GXL.h
+empty.obj: ../HC-SR04.h
 
 ../empty.c: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/std.h: 
@@ -431,30 +403,13 @@ C:/ti/tirtos_tivac_2_16_00_08/products/tidrivers_tivac_2_16_00_08/packages/ti/dr
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdbool.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/timers/timer64/Timer.h: 
+C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/timers/timer64/package/package.defs.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
+C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/package/package.defs.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
 C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/ITimer.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/Hwi.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/Hwi__prologue.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/package/package.defs.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/IHwi.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/package/Hwi_HwiProxy.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/IHwi.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/Hwi__epilogue.h: 
 C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
@@ -466,23 +421,11 @@ C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Assert.h:
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
 C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.h: 
 C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/IHwi.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/ITimerSupport.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/timers/timer64/package/Timer_TimerSupportProxy.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/ITimerSupport.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/timers/timer64/package/Timer_TimerSupportProxy.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IInstance.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/package/package.defs.h: 
-C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Types.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/interfaces/ITimer.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi.h: 
+C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h: 
+C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/cfg/global.h: 
 C:/Users/Andres/workspace_v7/empty_EK_TM4C123GXL_TI/Debug/configPkg/package/cfg/empty_pem4f.h: 
 C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h: 
@@ -491,3 +434,4 @@ C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/famil
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Error.h: 
 ../Board.h: 
 ../EK_TM4C123GXL.h: 
+../HC-SR04.h: 

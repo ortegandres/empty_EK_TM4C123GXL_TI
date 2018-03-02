@@ -2734,7 +2734,7 @@ ti_sysbios_family_arm_lm4_Timer_Object__ ti_sysbios_family_arm_lm4_Timer_Object_
         (xdc_Int)0x0,  /* id */
         ti_sysbios_interfaces_ITimer_RunMode_CONTINUOUS,  /* runMode */
         ti_sysbios_interfaces_ITimer_StartMode_AUTO,  /* startMode */
-        (xdc_UInt)0xe4e1c00,  /* period */
+        (xdc_UInt)0x4c4b400,  /* period */
         ti_sysbios_interfaces_ITimer_PeriodType_COUNTS,  /* periodType */
         (xdc_UInt)0x23,  /* intNum */
         ((xdc_UArg)0),  /* arg */
@@ -2753,9 +2753,9 @@ ti_sysbios_family_arm_lm4_Timer_Object__ ti_sysbios_family_arm_lm4_Timer_Object_
         0,
         1,  /* staticInst */
         (xdc_Int)0x1,  /* id */
-        ti_sysbios_interfaces_ITimer_RunMode_CONTINUOUS,  /* runMode */
+        ti_sysbios_interfaces_ITimer_RunMode_ONESHOT,  /* runMode */
         ti_sysbios_interfaces_ITimer_StartMode_USER,  /* startMode */
-        (xdc_UInt)0x320,  /* period */
+        (xdc_UInt)0x4b0,  /* period */
         ti_sysbios_interfaces_ITimer_PeriodType_COUNTS,  /* periodType */
         (xdc_UInt)0x25,  /* intNum */
         ((xdc_UArg)0),  /* arg */
@@ -2776,14 +2776,14 @@ ti_sysbios_family_arm_lm4_Timer_Object__ ti_sysbios_family_arm_lm4_Timer_Object_
         (xdc_Int)0x2,  /* id */
         ti_sysbios_interfaces_ITimer_RunMode_CONTINUOUS,  /* runMode */
         ti_sysbios_interfaces_ITimer_StartMode_USER,  /* startMode */
-        (xdc_UInt)0x989680,  /* period */
+        (xdc_UInt)0x249f00,  /* period */
         ti_sysbios_interfaces_ITimer_PeriodType_COUNTS,  /* periodType */
         (xdc_UInt)0x27,  /* intNum */
         ((xdc_UArg)0),  /* arg */
         ((xdc_Void(*)(xdc_UArg))0),  /* tickFxn */
         {
             (xdc_Bits32)0x0,  /* hi */
-            (xdc_Bits32)0xf4240,  /* lo */
+            (xdc_Bits32)0x0,  /* lo */
         },  /* extFreq */
         0,  /* hwi */
         (xdc_UInt)0xffffffff,  /* prevThreshold */
