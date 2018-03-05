@@ -11,45 +11,26 @@
 #define TriggerOff      Board_LED_OFF
 //#define TriggerIntPin   Board_BUTTON1   // PF0
 //#define EchoPin         Board_PA2   // PA2
-#define PeriodEcho          30000
+#define PeriodEcho          300000
 #define PeriodTriggerOff    15
 #define PeriodTriggerOn     1000000
 
 uint32_t CountPeriod = 0;
 uint32_t EchoCount = 0;
-unsigned int pTriggerPin = 0;;
+//uint32_t pTriggerPin = 0;
+//uint32_t pEchoPin = 0;
+unsigned int pTriggerPin = 0;
 unsigned int pEchoPin = 0;
-
 bool EchoTime = true;
 double distance = 0;
 double microS = 0;
 
-void Ultrasonic_init(uint32_t TriggerPin, uint32_t EchoPin){
-    pTriggerPin = TriggerPin;
-    pEchoPin = EchoPin;
-    GPIO_setCallback(TriggerPin, TriggerOnInt);
-    GPIO_enableInt(TriggerPin);
-    GPIO_setCallback(EchoPin, EchoInt);
-    GPIO_enableInt(EchoPin);
-    CountPeriod = PeriodEcho*80;
-    Timer_setPeriodMicroSecs(TimerTriggerOn, PeriodTriggerOn);
-    Timer_setPeriodMicroSecs(TimerTriggerOff, PeriodTriggerOff);
-    Timer_setPeriodMicroSecs(TimerEcho, PeriodEcho);
-}
-void Ultrasonic_setPeriod(PeriodMicrosec microsec){
-    Timer_setPeriodMicroSecs(TimerTriggerOn, microsec);
-}
-double Ultrasonic_read(void){
-    return distance;
-}
-
-//  --------------------------------------------------------
 void TriggerOnInt(unsigned int index)
 {
     GPIO_write(pTriggerPin, TriggerOn);
     Timer_setPeriodMicroSecs(TimerTriggerOff, PeriodTriggerOff);
     Timer_start(TimerTriggerOff);
-//    GPIO_clearInt(TriggerIntPin);
+    GPIO_clearInt(pTriggerPin);
 }
 
 void TriggerOffInt(unsigned int index)
@@ -75,4 +56,25 @@ void EchoInt(unsigned int index)
     }
     EchoTime ^= 1;
     GPIO_clearInt(pEchoPin);
+}
+
+//  -------------------------------------------------------------
+
+void Ultrasonic_init(unsigned int TriggerPin, unsigned int EchoPin){
+    pTriggerPin = TriggerPin;
+    pEchoPin = EchoPin;
+    GPIO_setCallback(TriggerPin, TriggerOnInt);
+    GPIO_enableInt(TriggerPin);
+    GPIO_setCallback(EchoPin, EchoInt);
+    GPIO_enableInt(EchoPin);
+    CountPeriod = PeriodEcho*80;
+    Timer_setPeriodMicroSecs(TimerTriggerOn, PeriodTriggerOn);
+    Timer_setPeriodMicroSecs(TimerTriggerOff, PeriodTriggerOff);
+    Timer_setPeriodMicroSecs(TimerEcho, PeriodEcho);
+}
+void Ultrasonic_setPeriod(PeriodMicrosec microsec){
+    Timer_setPeriodMicroSecs(TimerTriggerOn, microsec);
+}
+double Ultrasonic_read(void){
+    return distance;
 }
