@@ -121,8 +121,6 @@ HC-SR04.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/
 HC-SR04.obj: C:/ti/xdctools_3_32_00_06_core/packages/xdc/cfg/global.h
 HC-SR04.obj: C:/Users/Andres/workspace_v7/empty_EK_TM4C123GXL_TI/Debug/configPkg/package/cfg/empty_pem4f.h
 HC-SR04.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h
-HC-SR04.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h
-HC-SR04.obj: C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h
 HC-SR04.obj: ../Board.h
 HC-SR04.obj: ../EK_TM4C123GXL.h
 HC-SR04.obj: ../HC-SR04.h
@@ -247,8 +245,6 @@ C:/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/IModule.h:
 C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi__epilogue.h: 
 C:/ti/xdctools_3_32_00_06_core/packages/xdc/cfg/global.h: 
 C:/Users/Andres/workspace_v7/empty_EK_TM4C123GXL_TI/Debug/configPkg/package/cfg/empty_pem4f.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h: 
-C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h: 
 C:/ti/tirtos_tivac_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/lm4/Timer.h: 
 ../Board.h: 
 ../EK_TM4C123GXL.h: 

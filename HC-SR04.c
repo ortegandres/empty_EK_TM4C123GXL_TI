@@ -30,7 +30,7 @@ void TriggerOnInt(unsigned int index)
     GPIO_write(pTriggerPin, TriggerOn);
     Timer_setPeriodMicroSecs(TimerTriggerOff, PeriodTriggerOff);
     Timer_start(TimerTriggerOff);
-    GPIO_clearInt(pTriggerPin);
+//    GPIO_clearInt(pTriggerPin);
 }
 
 void TriggerOffInt(unsigned int index)
@@ -42,6 +42,7 @@ void TriggerOffInt(unsigned int index)
 void EchoInt(unsigned int index)
 {
     if(EchoTime == false){
+
         Timer_setPeriodMicroSecs(TimerEcho, PeriodEcho);
         Timer_start(TimerEcho);
         GPIO_write(Board_LED0, Board_LED_ON);
@@ -55,7 +56,7 @@ void EchoInt(unsigned int index)
         GPIO_write(Board_LED0, Board_LED_OFF);
     }
     EchoTime ^= 1;
-    GPIO_clearInt(pEchoPin);
+//    GPIO_clearInt(pEchoPin);
 }
 
 //  -------------------------------------------------------------
