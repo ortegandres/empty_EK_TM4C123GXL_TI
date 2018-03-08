@@ -7,7 +7,6 @@
     #include <ti/sysbios/knl/Clock.h>
     #include <ti/sysbios/knl/Task.h>
     #include <ti/sysbios/knl/Semaphore.h>
-
         
     #include <ti/drivers/GPIO.h>
     #include <ti/drivers/PIN.h>
@@ -17,7 +16,6 @@
 //
 //    Macros para la conversion de datos
 //
-
     #define     CmToInches(DISTANCE)    {DISTANCE/2.54;}
     #define     CmToMeters(DISTANCE)    {DISTANCE/100;}
 

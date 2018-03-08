@@ -153,7 +153,7 @@ void EK_TM4C123GXL_initGeneral(void)
 GPIO_PinConfig gpioPinConfigs[] = {
     /* Input pins */
     /* EK_TM4C123GXL_GPIO_SW1 */
-    GPIOTiva_PF_4 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_BOTH_EDGES,
+    GPIOTiva_PF_4 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_RISING,
     /* EK_TM4C123GXL_GPIO_SW2 */
     GPIOTiva_PF_0 | GPIO_CFG_IN_PU | GPIO_CFG_IN_INT_RISING,
 
