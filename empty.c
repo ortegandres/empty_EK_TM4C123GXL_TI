@@ -8,7 +8,6 @@
 #include <ti/drivers/PIN.h>
 #include <xdc/runtime/Types.h>
 #include <ti/sysbios/family/arm/lm4/Timer.h>
-//#include <xdc/cfg/global.h>
 #include <xdc/runtime/Error.h>
 #include "Board.h"
 #include "HC_SR04.h"
