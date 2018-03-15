@@ -2,6 +2,7 @@
 #include <xdc/runtime/System.h>
 
 #define STACKSIZE           512
+
 #define PeriodEcho          30000
 #define PeriodTriggerOff    15
 #define Trigger_ON          1
@@ -63,7 +64,7 @@ goto TASKLOOP;
 void TimerEvent(){
 Timer_stop(TimerTrigger);
     //Se han alcanzado ya los 15uS
-    GPIO_write(Trigger_Pin, Trigger_OFF);           //Apagar el pulso
+GPIO_write(Trigger_Pin, Trigger_OFF);           //Apagar el pulso
 //        Timer_setPeriodMicroSecs(TimerEcho, PeriodEcho);//Detiene el Timer
 }
 void EchoEvent(unsigned int index){
@@ -109,8 +110,8 @@ void Ultrasonic_init(index_PIN TriggerPin, index_PIN EchoPin){
 
     //Configura el Task
         Task_Params_init(&taskParams);
-            taskParams.stackSize = STACKSIZE;
-            taskParams.stack = &UltrasonicTaskStack;
+        taskParams.stackSize = STACKSIZE;
+        taskParams.stack = &UltrasonicTaskStack;
         Task_construct(&UltrasonicTaskStruct, (Task_FuncPtr)HCSR04Task, &taskParams, NULL);
 
     //Configurar semaforos
