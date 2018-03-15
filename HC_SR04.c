@@ -18,15 +18,17 @@ Task_Handle     UltrasonicTaskHandle;
 Semaphore_Struct Measure_sem;
 Semaphore_Handle Measure_sem_Handle;
 
-unsigned int    Trigger_Pin = 0;
-unsigned int    Echo_Pin    = 0;
+//unsigned int    Trigger_Pin = 0;
+unsigned int    Trigger_Pin[] = {0};
+unsigned int    Echo_Pin[]    = {0};
+unsigned int    i           = 0;
+unsigned int    Num_Ultrasonics   = 0;
 double          distance    = 0;
 double          microS      = 0;
 uint32_t        CountPeriod = 0;
 uint32_t        EchoCount   = 0;
 bool            TaskFlag    = false;
 bool            once        = true;
-
 
 //
 //  Funciones privadas
@@ -40,7 +42,7 @@ TASKLOOP:
     while(TaskFlag){
 //01 Envia el pulso!
         Timer_setPeriodMicroSecs(TimerTrigger, PeriodTriggerOff);
-        GPIO_write(Trigger_Pin, Trigger_ON);
+        GPIO_write(Trigger_Pin[i], Trigger_ON);
         Timer_start(TimerTrigger);
 //      Esperar semaforo
         Semaphore_pend(Measure_sem_Handle, BIOS_WAIT_FOREVER);
@@ -64,13 +66,13 @@ goto TASKLOOP;
 void TimerEvent(){
 Timer_stop(TimerTrigger);
     //Se han alcanzado ya los 15uS
-GPIO_write(Trigger_Pin, Trigger_OFF);           //Apagar el pulso
+GPIO_write(Trigger_Pin[i], Trigger_OFF);           //Apagar el pulso
 //        Timer_setPeriodMicroSecs(TimerEcho, PeriodEcho);//Detiene el Timer
 }
 void EchoEvent(unsigned int index){
     //Flanco de subida
     if(once == false){
-        if(GPIO_read(Echo_Pin)){
+        if(GPIO_read(Echo_Pin[i])){
             //Activar el timer, el timer comienza en 0
             Timer_start(TimerEcho);
         }
@@ -82,26 +84,32 @@ void EchoEvent(unsigned int index){
 //            *Leer el dato
 //        Activar semaforo
             Semaphore_post(Measure_sem_Handle);
+            i = (i + 1)%Num_Ultrasonics;
         }
     }
     else{
         once = false;
     }
-    GPIO_clearInt(Echo_Pin);
+    GPIO_clearInt(Echo_Pin[i]);
 }
 
 //
 //  Funciones Publicas
 //
-void Ultrasonic_init(index_PIN TriggerPin, index_PIN EchoPin){
+void Ultrasonic_init(pinTrigger TriggerPin[], pinEcho EchoPin[], num_Ultrasonics numUltrasonics){
     Task_Params         taskParams;
     Semaphore_Params    semParams;
-    Trigger_Pin = TriggerPin;
-    Echo_Pin    = EchoPin;
+
+    Num_Ultrasonics = numUltrasonics;
 
     //Registra las interrupciones
-    GPIO_setCallback(EchoPin, EchoEvent);
-    GPIO_enableInt(EchoPin);
+    int k;
+    for(k=0; k<numUltrasonics; k++){
+        Trigger_Pin[k] = TriggerPin[k];
+        Echo_Pin[k] = EchoPin[k];
+        GPIO_setCallback(EchoPin[k], EchoEvent);
+        GPIO_enableInt(EchoPin[k]);
+    }
 
     //Configura el timer
     CountPeriod = PeriodEcho*80;

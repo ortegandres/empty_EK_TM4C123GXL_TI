@@ -20,10 +20,10 @@
     #define     CmToInches(DISTANCE)    {DISTANCE/2.54;}
     #define     CmToMeters(DISTANCE)    {DISTANCE/100;}
 
-    typedef unsigned int    index_PIN;
+    typedef unsigned int    pinTrigger, pinEcho, num_Ultrasonics;
     typedef float           centimeters;
 
-    extern    void        Ultrasonic_init(index_PIN, index_PIN);
+    extern    void        Ultrasonic_init(pinTrigger TriggerPin[], pinEcho EchoPin[], num_Ultrasonics);
     extern    void        Ultrasonic_Enable();
     extern    void        Ultrasonic_Disable();
     extern    centimeters Ultrasonic_Read();    //Centimetros

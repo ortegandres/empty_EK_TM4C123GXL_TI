@@ -17,12 +17,15 @@
 Task_Struct task0Struct;
 Char task0Stack[TASKSTACKSIZE];
 
+unsigned int    trigger[]  = {Board_LED1};
+unsigned int    echo[]     = {Board_PA2};
+
 int main(void)
 {
     Board_initGeneral();
     Board_initGPIO();
 
-    Ultrasonic_init(Board_LED1, Board_PA2);
+    Ultrasonic_init(trigger, echo, 1);
     Ultrasonic_Enable();
 
     System_printf("Ultrasonic HC-SR04 \n");
